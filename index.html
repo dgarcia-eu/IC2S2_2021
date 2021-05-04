@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>The politicization of medical topics on social media</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="David Garcia   TU Graz, Institute of Interactive Systems and Data Science" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="libs/footer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# The politicization of medical topics on social media
+### David Garcia <br> <em>TU Graz, Institute of Interactive Systems and Data Science</em>
+### Slides vailable at: dgarcia.eu/politicization2021
+
+---
+
+
+
+
+
+
+
+
+layout: true
+&lt;div class="my-footer"&gt;&lt;span&gt;David Garcia - Computational Social Science Lab - TU Graz + CSH Vienna&lt;/span&gt;&lt;/div&gt; 
+
+---
+class:center
+# About me
+
+.pull-left[
+&lt;img src="figures/Profile.jpg" width="270" /&gt;
+]
+
+.pull-right[
+&lt;br&gt;
+Website: [dgarcia.eu](https://dgarcia.eu)
+
+Twitter: [@dgarcia_eu](https://twitter.com/dgarcia_eu)
+
+Github: [dgarcia-eu](https://github.com/dgarcia-eu)
+
+Email: dgarcia@tugraz.at
+]
+
+Professor for Computational Behavioral and Social Sciences at TU Graz
+&lt;br&gt;Faculty member of the Complexity Science Hub Vienna
+&lt;br&gt;Group leader at the Medical University of Vienna
+&lt;br&gt;**Masters Programme in Computational Social Systems from October 2021!**
+
+---
+
+# The Computational Social Science Lab
+
+&lt;center&gt;
+&lt;img src="figures/Lab.png" width="650" /&gt;
+
+---
+&lt;center&gt;
+&lt;img src="figures/CSSinfo.png" width="900" /&gt;
+### Our aim is to understand human behavior and socio-technical phenomena in the digital society
+---
+
+# Topics
+
+## 1. Misinformation and collaborative propaganda
+
+## 2. Food-based polarization: the EAT-Lancet case
+
+## 3. Politicization of medical preprints 
+
+## 4. A computational model of hyperpolarization
+
+## 5. Misinformation and ontologies of truth
+
+---
+
+
+# Topics
+
+## 1. Misinformation and collaborative propaganda
+
+---
+
+# The hot topic of fake news
+
+&lt;img src="figures/fakenews.png" width="1000" /&gt;
+
+---
+
+# Terminology about misinformation
+
+&lt;img src="figures/misinfoClasses.png" width="1200" /&gt;
+
+- **False information:** 
+  - False or fake news: news-like content that is verifiably false
+  - False rumours: General talk or hearsay not based on factual knowledge
+  - Factitious information blends: half-truths and speculations
+  - Satire and parody
+  - Deep fakes and cheap fakes
+  
+&lt;div style="font-size:15pt"&gt;
+Technology and democracy: Understanding the influence of online technologies on political behaviour and decision-making. Stephan Lewandowsky, Laura Smillie, David Garcia, Ralph Hertwig, Jim Weatherall, Stefanie Egidy, Ronald E. Robertson, Cailin O’connor, Anastasia Kozyreva, Philipp Lorenz-Spreen, Yannik Blaschke, and Mark Leiser. (2020)
+&lt;/div&gt;
+ 
+
+---
+
+# Terminology about misinformation
+
+&lt;img src="figures/misinfoClasses.png" width="1200" /&gt;
+
+- **Information disorders:** 
+  - Misinformation: false or misleading content shared without malicious intent
+  - Disinformation: false or fabricated content shared with the intent to mislead or cause harm
+  - Malinformation: true information shared to cause harm (hate speech, private information)
+
+&lt;div style="font-size:15pt"&gt;
+Technology and democracy: Understanding the influence of online technologies on political behaviour and decision-making. Stephan Lewandowsky, Laura Smillie, David Garcia, Ralph Hertwig, Jim Weatherall, Stefanie Egidy, Ronald E. Robertson, Cailin O’connor, Anastasia Kozyreva, Philipp Lorenz-Spreen, Yannik Blaschke, and Mark Leiser. (2020)
+&lt;/div&gt;
+
+---
+
+# Terminology about misinformation
+
+&lt;img src="figures/misinfoClasses.png" width="1200" /&gt;
+
+- **Propaganda:** Information, especially of a biased or misleading nature, used to promote a political cause or point of view. Can be political or industrial
+- **Systematic lies:** Carefully constructed fabrications or obfuscations (e.g. weapons of mass destruction in Irak)
+- **Conspiracy theories:** Alternative explanations for traditional news events which assume that these events are controlled by a secret elite group
+
+&lt;div style="font-size:15pt"&gt;
+Technology and democracy: Understanding the influence of online technologies on political behaviour and decision-making. Stephan Lewandowsky, Laura Smillie, David Garcia, Ralph Hertwig, Jim Weatherall, Stefanie Egidy, Ronald E. Robertson, Cailin O’connor, Anastasia Kozyreva, Philipp Lorenz-Spreen, Yannik Blaschke, and Mark Leiser. (2020)
+&lt;/div&gt;
+
+---
+
+## Collaborative propaganda and politicization
+
+&lt;img src="figures/capitol.png" width="530" /&gt;
+&lt;img src="figures/capitol2.png" width="540" /&gt;
+
+&lt;div style="font-size:15pt"&gt;
+Misinformation or expressive responding? What an inauguration crowd can tell us about the source of political misinformation in surveys. Schaffner &amp; Luks. Public Opinion Quarterly (2018)
+&lt;/div&gt;
+
+---
+
+# Topics
+
+## 1. Misinformation and collaborative propaganda
+
+## 2. Food-based polarization: the EAT-Lancet case
+
+---
+
+## Emerging politicization of food habits
+.pull-left[
+- US Food demand Survey
+
+- Self-reported meat consumption intention over time
+
+- Color: party alignment
+
+- Initial increasing trend for both parties
+
+- Start of alignment with party from 2016: eating meat becomes a political issue
+
+]
+.pull-right[
+
+&lt;img src="figures/Trends.png" width="450" /&gt;
+]
+---
+
+## Misinformation about food and climate policy
+&lt;img src="figures/BidenMeat.png" width="650" style="display: block; margin: auto;" /&gt;
+---
+
+
+layout: true
+&lt;div class="my-footer"&gt;&lt;span&gt;
+&lt;a href=https://doi.org/10.1016/S0140-6736(19)32526-7&gt; EATLancet vs yes2meat: the digital backlash to the planetary health diet. David Garcia, Victor Galaz, Stefan Daume. The Lancet (2019)&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
+
+---
+## The EAT-Lancet report
+
+&lt;img src="figures/eatlancet.png" width="1000" /&gt;
+
+*The first full scientific review of what constitutes a healthy diet from a sustainable food system, and which actions can support and speed up food system transformation. (eatforum.org)*
+
+---
+
+## \#yes2meat: the digital backlash to EAT-Lancet
+
+&lt;img src="figures/yes2meat.png" width="1100" /&gt;
+---
+## Conspiracy theories in \#yes2meat
+&lt;img src="figures/MeatConspiracy.png" width="780" style="display: block; margin: auto;" /&gt;
+---
+
+## Twitter data on EAT-Lancet and yes2meat
+
+- List of original tweets that contain “EAT-Lancet” (or similar) or “yes2meat” from Twitter search interface (Dec 2018 - April 2019):
+  - 7281 EAT-Lancet tweets, 8586 yes2meat tweets, 347 tweets mention both
+- Tweet metadata from Twitter API: retweets, links, user profile (4278 users)
+  - User profiles and self-description from Twitter API
+  - Retrieved list of accounts they follow: 4.9 Million follower links
+  - Retrieved timeline up to last (approx)  3200 tweets. 8 Million tweets in total
+  - Analyzed automated behavior with botometer (4,203 users)
+  - 2,376 unique links shared from tweets
+
+- Manual sentiment annotations (Pro EAT-Lancet, Against EAT-Lancet, neutral, irrelevant) for various samples (top URLS and samples from each community)
+---
+
+class:center
+
+## Time series and URL shares
+
+&lt;img src="figures/TS-eatlancet.png" width="950" /&gt;
+
+---
+
+## Social network analysis
+.pull-left[
+&lt;img src="figures/Net.png" width="500" /&gt;
+]
+.pull-right[
+
+]
+---
+
+## Social network analysis
+.pull-left[
+&lt;img src="figures/Net.png" width="500" /&gt;
+]
+.pull-right[
+&lt;img src="figures/WCblue.png" width="950" /&gt;
+]
+---
+
+## Social network analysis
+.pull-left[
+&lt;img src="figures/Net.png" width="500" /&gt;
+]
+.pull-right[
+&lt;img src="figures/WCred.png" width="950" /&gt;
+]
+---
+
+## Social network analysis
+.pull-left[
+&lt;img src="figures/Net.png" width="500" /&gt;
+]
+.pull-right[
+&lt;img src="figures/WCgreen.png" width="490" /&gt;
+]
+---
+
+## Social network analysis
+.pull-left[
+&lt;img src="figures/Net.png" width="500" /&gt;
+]
+.pull-right[
+&lt;img src="figures/WCyellow.png" width="950" /&gt;
+]
+---
+
+## Retweet changes in yellow community
+.pull-left[
+&lt;img src="figures/Net.png" width="500" /&gt;
+]
+.pull-right[
+&lt;img src="figures/YellowRT.png" width="450" /&gt;
+]
+---
+
+## EAT-Lancet and yes2meat: Summary
+
+- We mapped the digital backlash to EAT-Lancet on Twitter through #yes2meat
+
+- Birth of #yes2meat preceded the release of the report
+
+- Four communities: pro-EAT-Lancet, skeptic, pro-yes2meat, and vegan
+
+- Information flow from pro-yes2meat to skeptic community after report
+
+- Diet polarization: liberal vegan vs conservative keto
+
+
+**EATLancet vs yes2meat: the digital backlash to the planetary health diet.**  
+David Garcia, Victor Galaz, Stefan Daume. The Lancet 394(10215) (2019)
+https://doi.org/10.1016/S0140-6736(19)32526-7
+
+---
+
+layout: true
+&lt;div class="my-footer"&gt;&lt;span&gt; &lt;a href=https://preprints.jmir.org/preprint/25169&gt; 
+COVID-19 and the politicisation of medical preprints on Twitter: Quantitative Analysis of Social Media Data. Aleksandra Urman, Stefania Ionescu, David Garcia, Anikó Hannák (2020) &lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
+
+---
+
+# Topics
+
+## 1. Misinformation and collaborative propaganda
+
+## 2. Food-based polarization: the EAT-Lancet case
+
+## 3. Politicization of medical preprints 
+
+---
+## The Santa Clara paper controversy
+![](figures/ioannidis.png)
+
+---
+
+## A dataset of medical preprints on Twitter
+All tweets that had a link to a medRxiv paper between June 2019 and June 2020 
+.pull-left[
+- 557,405 tweets, 259,491 users
+- Classification of users based on their bio profile text: 
+  - 1,944 Democrats, 
+  - 9,174 Republicans
+  - 8,400 medics
+  - 15,400 scientists
+- We normalise metrics against a random sample of tweets from the same period.
+]
+.pull-right[
+&lt;img src="figures/medRxiv1.jpeg" width="800" style="display: block; margin: auto;" /&gt;
+]
+
+---
+## A change in voice
+&lt;img src="figures/politicansTS.jpeg" width="670" style="display: block; margin: auto;" /&gt;
+---
+## The Santa Clara paper case
+&lt;img src="figures/Ioannidis1.jpeg" width="1000" style="display: block; margin: auto;" /&gt;
+---
+## From "preprint" to "study"
+&lt;img src="figures/words.png" width="900" style="display: block; margin: auto;" /&gt;
+---
+## Science communication in the digital society
+&lt;img src="figures/xkcd.png" width="1250" style="display: block; margin: auto;" /&gt;
+---
+
+
+layout: true
+&lt;div class="my-footer"&gt;&lt;span&gt;
+&lt;a href=http://jasss.soc.surrey.ac.uk/23/3/5.html&gt; A Weighted Balance Model of Opinion Hyperpolarization. Simon Schweighofer, Frank Schweitzer &amp; David Garcia, JASSS (2020)&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
+
+---
+# Topics
+
+## 1. Misinformation and collaborative propaganda
+
+## 2. Food-based polarization: the EAT-Lancet case
+
+## 3. Politicization of medical preprints 
+
+## 4. A computational model of hyperpolarization
+
+---
+
+# Hyperpolarization
+
+&lt;img src="figures/Hyperpolarization.png" width="950" style="display: block; margin: auto;" /&gt;
+&lt;center&gt;
+*Hyperpolarization: Opinion extremeness x Opinion constraint*
+
+---
+
+## Weighted Balance Theory and hyperpolarization
+
+.pull-left[
+- Cognitive balance +   
+ evaluative extremeness
+
+- ABM show emergence of hyperpolarization
+
+- Filter bubbles and echo chambers are not a necessary condition
+
+- **Predicts that issues become aligned and polarized over time**
+]
+
+.pull-right[
+&lt;img src="figures/WBT.png" width="450" /&gt;
+]
+
+[A Weighted Balance Model of Opinion Hyperpolarization. Schweighofer, Schweitzer &amp; Garcia, JASSS (2020)](http://jasss.soc.surrey.ac.uk/23/3/5.html)
+
+---
+class:center
+
+## Hyperpolarization in Weighted Balance Theory
+
+
+&lt;iframe width="800" height="500" src="https://www.youtube.com/embed/y4rvLMgqwXQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+---
+
+# Topics
+
+## 1. Misinformation and collaborative propaganda
+
+## 2. Food-based polarization: the EAT-Lancet case
+
+## 3. Politicization of medical preprints 
+
+## 4. A computational model of hyperpolarization
+
+## 5. Misinformation and ontologies of truth
+
+---
+
+## Deliberate lies vs shock and chaos
+.pull-left[
+Two approaches to mislead the public:
+- **deliberate lies** (e.g weapons of mass destruction in Iraq)
+- **shock and chaos** (e.g. Trump's approach, Russia and MH17)
+]
+.pull-right[
+&lt;img src="figures/bush.jpg" width="250" /&gt;
+&lt;img src="figures/Trump.jpeg" width="270" /&gt;
+]
+They differ in their **ontology of truth:**&lt;/br&gt;
+- deliberate lies assume a strong realism with the acceptance that truths exist and a respect for facts&lt;/br&gt;
+- shock and chaos assumes a strong constructivism where there is disbelief in the existence of external truths and a
+disrespect of facts.
+---
+
+#### PRODEMINFO: Protecting the Democratic Information Space in Europe
+
+&lt;img src="figures/PRODEMINFO.png" width="600" style="display: block; margin: auto;" /&gt;
+
+- ERC Advanced project (PI: Stephan Lewandowsky, Bristol)
+- CSS lab involved in historical text analysis and field interventions
+- Parallel project: inoculation experiments with Sander van der Linden, funded by Google Jigsaw and supported by Twitter with free ads
+---
+
+## Summary
+
+- Misinformation beyond fake news: 
+  - participatory propaganda 
+  - new ontologies of truth: shock and chaos
+
+- The EAT-Lancet case: emerging polarization in food topics
+
+- The case of medical preprints on Twitter: increasing politicization
+
+- Weighted Balance computational model explains increasing politicization
+
+- PRODEMINFO: studying ontologies of truth to protect information spaces
+
+**Thanks for listening! More at [www.dgarcia.eu](https://dgarcia.eu) and [@dgarcia_eu](https://twitter.com/dgarcia_eu)**
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="libs/perc.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
