@@ -1,6 +1,6 @@
 ---
 title: "The politicization of medical topics on social media"
-author: "David Garcia <br> *TU Graz, Institute of Interactive Systems and Data Science*"
+author: "David Garcia <br> *TU Graz, CSH Vienna, Med Uni Vienna*"
 date: "Slides vailable at: dgarcia.eu/politicization2021"
 output:
   xaringan::moon_reader:
@@ -60,8 +60,6 @@ Email: dgarcia@tugraz.at
 Professor for Computational Behavioral and Social Sciences at TU Graz
 <br>Faculty member of the Complexity Science Hub Vienna
 <br>Group leader at the Medical University of Vienna
-<br>**Masters Programme in Computational Social Systems from October 2021!**
-
 ---
 
 # The Computational Social Science Lab
@@ -81,106 +79,19 @@ knitr::include_graphics("figures/CSSinfo.png")
 
 # Topics
 
-## 1. Misinformation and collaborative propaganda
+## 1. Food-based polarization: the EAT-Lancet case
 
-## 2. Food-based polarization: the EAT-Lancet case
+## 2. Politicization of medical preprints 
 
-## 3. Politicization of medical preprints 
+## 3. A computational model of hyperpolarization
 
-## 4. A computational model of hyperpolarization
-
-## 5. Misinformation and ontologies of truth
-
----
-
-
-# Topics
-
-## 1. Misinformation and collaborative propaganda
-
----
-
-# The hot topic of fake news
-
-```{r, echo=FALSE, out.width=1000}
-knitr::include_graphics("figures/fakenews.png")
-```
-
----
-
-# Terminology about misinformation
-
-```{r, echo=FALSE, out.width=1200}
-knitr::include_graphics("figures/misinfoClasses.png")
-```
-
-- **False information:** 
-  - False or fake news: news-like content that is verifiably false
-  - False rumours: General talk or hearsay not based on factual knowledge
-  - Factitious information blends: half-truths and speculations
-  - Satire and parody
-  - Deep fakes and cheap fakes
-  
-<div style="font-size:15pt">
-Technology and democracy: Understanding the influence of online technologies on political behaviour and decision-making. Stephan Lewandowsky, Laura Smillie, David Garcia, Ralph Hertwig, Jim Weatherall, Stefanie Egidy, Ronald E. Robertson, Cailin O’connor, Anastasia Kozyreva, Philipp Lorenz-Spreen, Yannik Blaschke, and Mark Leiser. (2020)
-</div>
- 
-
----
-
-# Terminology about misinformation
-
-```{r, echo=FALSE, out.width=1200}
-knitr::include_graphics("figures/misinfoClasses.png")
-```
-
-- **Information disorders:** 
-  - Misinformation: false or misleading content shared without malicious intent
-  - Disinformation: false or fabricated content shared with the intent to mislead or cause harm
-  - Malinformation: true information shared to cause harm (hate speech, private information)
-
-<div style="font-size:15pt">
-Technology and democracy: Understanding the influence of online technologies on political behaviour and decision-making. Stephan Lewandowsky, Laura Smillie, David Garcia, Ralph Hertwig, Jim Weatherall, Stefanie Egidy, Ronald E. Robertson, Cailin O’connor, Anastasia Kozyreva, Philipp Lorenz-Spreen, Yannik Blaschke, and Mark Leiser. (2020)
-</div>
-
----
-
-# Terminology about misinformation
-
-```{r, echo=FALSE, out.width=1200}
-knitr::include_graphics("figures/misinfoClasses.png")
-```
-
-- **Propaganda:** Information, especially of a biased or misleading nature, used to promote a political cause or point of view. Can be political or industrial
-- **Systematic lies:** Carefully constructed fabrications or obfuscations (e.g. weapons of mass destruction in Irak)
-- **Conspiracy theories:** Alternative explanations for traditional news events which assume that these events are controlled by a secret elite group
-
-<div style="font-size:15pt">
-Technology and democracy: Understanding the influence of online technologies on political behaviour and decision-making. Stephan Lewandowsky, Laura Smillie, David Garcia, Ralph Hertwig, Jim Weatherall, Stefanie Egidy, Ronald E. Robertson, Cailin O’connor, Anastasia Kozyreva, Philipp Lorenz-Spreen, Yannik Blaschke, and Mark Leiser. (2020)
-</div>
-
----
-
-## Collaborative propaganda and politicization
-
-```{r, echo=FALSE, out.width=530}
-knitr::include_graphics("figures/capitol.png")
-```
-```{r, echo=FALSE, out.width=540}
-knitr::include_graphics("figures/capitol2.png")
-```
-
-<div style="font-size:15pt">
-Misinformation or expressive responding? What an inauguration crowd can tell us about the source of political misinformation in surveys. Schaffner & Luks. Public Opinion Quarterly (2018)
-</div>
+## 4. Misinformation and ontologies of truth
 
 ---
 
 # Topics
 
-## 1. Misinformation and collaborative propaganda
-
-## 2. Food-based polarization: the EAT-Lancet case
+## 1. Food-based polarization: the EAT-Lancet case
 
 ---
 
@@ -366,11 +277,9 @@ COVID-19 and the politicisation of medical preprints on Twitter: Quantitative An
 
 # Topics
 
-## 1. Misinformation and collaborative propaganda
+## 1. Food-based polarization: the EAT-Lancet case
 
-## 2. Food-based polarization: the EAT-Lancet case
-
-## 3. Politicization of medical preprints 
+## 2. Politicization of medical preprints 
 
 ---
 ## The Santa Clara paper controversy
@@ -425,13 +334,11 @@ layout: true
 ---
 # Topics
 
-## 1. Misinformation and collaborative propaganda
+## 1. Food-based polarization: the EAT-Lancet case
 
-## 2. Food-based polarization: the EAT-Lancet case
+## 2. Politicization of medical preprints 
 
-## 3. Politicization of medical preprints 
-
-## 4. A computational model of hyperpolarization
+## 3. A computational model of hyperpolarization
 
 ---
 
@@ -478,15 +385,13 @@ class:center
 
 # Topics
 
-## 1. Misinformation and collaborative propaganda
+## 1. Food-based polarization: the EAT-Lancet case
 
-## 2. Food-based polarization: the EAT-Lancet case
+## 2. Politicization of medical preprints 
 
-## 3. Politicization of medical preprints 
+## 3. A computational model of hyperpolarization
 
-## 4. A computational model of hyperpolarization
-
-## 5. Misinformation and ontologies of truth
+## 4. Misinformation and ontologies of truth
 
 ---
 
