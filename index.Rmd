@@ -446,7 +446,16 @@ knitr::include_graphics("figures/PRODEMINFO.png")
 
 - PRODEMINFO: studying ontologies of truth to protect information spaces
 
-**Thanks for listening! More at [www.dgarcia.eu](https://dgarcia.eu) and [@dgarcia_eu](https://twitter.com/dgarcia_eu)**
+---
+
+## TU Graz Master in Computational Social Systems
+
+```{r, echo=FALSE, out.width=750, fig.align='center'}
+knitr::include_graphics("figures/CD-MKT-StudMa-Kampagne-CSS-Flyer-A5-an02.png")
+```
+
+
+**Thanks for listening! More at: [tugraz.at/go/master-css](tugraz.at/go/master-css) and [www.dgarcia.eu](https://dgarcia.eu)**
 
 
 
