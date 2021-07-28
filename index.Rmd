@@ -1,7 +1,7 @@
 ---
-title: "The politicization of medical topics on social media"
-author: "David Garcia <br> *TU Graz, CSH Vienna, Med Uni Vienna*"
-date: "Slides vailable at: dgarcia.eu/politicization2021"
+title: "Measuring large-scale emotion aggregates through social media text"
+author: "David Garcia <br> *Graz University of Technology, CSH Vienna, Med Uni Vienna*"
+date: "29.07.2021, IC$^2$S$^2$ <br> Slides vailable at: dgarcia.eu/IC2S2_2021"
 output:
   xaringan::moon_reader:
     lib_dir: libs 
@@ -37,424 +37,248 @@ layout: true
 <div class="my-footer"><span>David Garcia - Computational Social Science Lab - TU Graz + CSH Vienna</span></div> 
 
 ---
-class:center
-# About me
 
-.pull-left[
-```{r, echo=FALSE, out.width=270}
-knitr::include_graphics("figures/Profile.jpg")
-```
-]
-
-.pull-right[
-<br>
-Website: [dgarcia.eu](https://dgarcia.eu)
-
-Twitter: [@dgarcia_eu](https://twitter.com/dgarcia_eu)
-
-Github: [dgarcia-eu](https://github.com/dgarcia-eu)
-
-Email: dgarcia@tugraz.at
-]
-
-Professor for Computational Behavioral and Social Sciences at TU Graz
-<br>Faculty member of the Complexity Science Hub Vienna
-<br>Group leader at the Medical University of Vienna
----
-
-# The Computational Social Science Lab
-
-<center>
-```{r, echo=FALSE, out.width=650}
-knitr::include_graphics("figures/Lab.png")
-```
-
----
+## The Computational Social Science Lab Austria
 <center>
 ```{r, echo=FALSE, out.width=900}
-knitr::include_graphics("figures/CSSinfo.png")
+knitr::include_graphics("figures/Lab-July2021.png")
 ```
-### Our aim is to understand human behavior and socio-technical phenomena in the digital society
----
-
-# Topics
-
-## 1. Food-based polarization: the EAT-Lancet case
-
-## 2. Politicization of medical preprints 
-
-## 3. A computational model of hyperpolarization
-
-## 4. Misinformation and ontologies of truth
 
 ---
 
-# Topics
-
-## 1. Food-based polarization: the EAT-Lancet case
-
-*With Victor Galaz and Stefan Daume, Stockholm Resilience Center*
-
----
-
-## Emerging politicization of food habits
-.pull-left[
-- US Food demand Survey
-
-- Self-reported meat consumption intention over time
-
-- Color: party alignment
-
-- Initial increasing trend for both parties
-
-- Start of alignment with party from 2016: eating meat becomes a political issue
-
-]
-.pull-right[
-
-```{r, echo=FALSE, out.width=450}
-knitr::include_graphics("figures/Trends.png")
+## The Hype Cycle of Computational Social Science
+<center>
+```{r, echo=FALSE, out.width=900}
+knitr::include_graphics("figures/Hype1.svg")
 ```
-]
----
 
-## Misinformation about food and climate policy
-```{r, echo=FALSE, out.width=650, fig.align='center'}
-knitr::include_graphics("figures/BidenMeat.png")
+---
+## The Hype Cycle of Computational Social Science
+<center>
+```{r, echo=FALSE, out.width=900}
+knitr::include_graphics("figures/Hype2.svg")
 ```
 ---
-
+## The Hype Cycle of Computational Social Science
+<center>
+```{r, echo=FALSE, out.width=900}
+knitr::include_graphics("figures/Hype3.svg")
+```
+---
 
 layout: true
 <div class="my-footer"><span>
-<a href=https://doi.org/10.1016/S0140-6736(19)32526-7> EATLancet vs yes2meat: the digital backlash to the planetary health diet. David Garcia, Victor Galaz, Stefan Daume. The Lancet (2019)</a></span></div>
+<a href=https://xxx> Social media emotion macroscopes reflect emotional experiences in society at large. David Garcia, Max Pellert, Jana Lasser, Hannah Metzler. Arxiv preprint (2021)</a></span></div>
 
 ---
-## The EAT-Lancet report
 
-```{r, echo=FALSE, out.width=1000}
-knitr::include_graphics("figures/eatlancet.png")
+# Social Media Macroscopes of Emotions
+.pull-left[
+```{r, echo=FALSE, out.width=1100}
+knitr::include_graphics("figures/Macy.jpg")
+```
+<font size="5">
+<a href="https://science.sciencemag.org/content/333/6051/1878/"> Diurnal and seasonal mood vary with work, sleep, and daylength across diverse cultures. Golder & Macy, Science (2011) </a>
+</font>
+]
+
+.pull-right[
+```{r, echo=FALSE, out.width=1100}
+knitr::include_graphics("figures/hedonometer.png")
 ```
 
-*The first full scientific review of what constitutes a healthy diet from a sustainable food system, and which actions can support and speed up food system transformation. (eatforum.org)*
+<font size="5">
+<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0026752"> Temporal patterns of happiness and information in a global social network: Hedonometrics and Twitter. Dodds et al. PLoS One (2011) </a>
+</font>
+]
 
 ---
 
-## \#yes2meat: the digital backlash to EAT-Lancet
+# Social Media Macroscopes of Emotions
+.pull-left[
+```{r, echo=FALSE, out.width=500}
+knitr::include_graphics("figures/Paris.png")
+``` 
+<font size="5"> <a href="https://journals.sagepub.com/doi/full/10.1177/0956797619831964"> Collective Emotions and Social Resilience in the Digital Traces After a Terrorist Attack. Garcia & Rime, Psychological Science (2019) </a>
+</font>
+]
+
+.pull-right[
+```{r, echo=FALSE, out.width=1100}
+knitr::include_graphics("figures/COVID.png")
+```
+
+<font size="5">
+<a href="https://psyarxiv.com/qejxv"> Collective Emotions During the COVID-19 Outbreak. Metzler et al. Psyarxiv (2021) </a>
+</font>
+]
+
+---
+
+## Limits of Social Media Data to Study Emotion
 
 ```{r, echo=FALSE, out.width=1100}
-knitr::include_graphics("figures/yes2meat.png")
+knitr::include_graphics("figures/Jaidka.png")
 ```
----
 
-## Twitter data on EAT-Lancet and yes2meat
-
-- List of original tweets that contain “EAT-Lancet” (or similar) or “yes2meat” from Twitter search interface (Dec 2018 - April 2019):
-  - 7281 EAT-Lancet tweets, 8586 yes2meat tweets, 347 tweets mention both
-- Tweet metadata from Twitter API: retweets, links, user profile (4278 users)
-  - User profiles and self-description from Twitter API
-  - Retrieved list of accounts they follow: 4.9 Million follower links
-  - Retrieved timeline up to last (approx)  3200 tweets. 8 Million tweets in total
-  - Analyzed automated behavior with botometer (4,203 users)
-  - 2,376 unique links shared from tweets
-
-- Manual sentiment annotations (Pro EAT-Lancet, Against EAT-Lancet, neutral, irrelevant) for various samples (top URLS and samples from each community)
----
-
-class:center
-
-## Time series and URL shares
-
-```{r, echo=FALSE, out.width=950}
-knitr::include_graphics("figures/TS-eatlancet.png")
-```
+[Estimating geographic subjective well-being from Twitter: A comparison of dictionary and data-driven language methods. Jaidka et al. PNAS (2020)](https://www.pnas.org/content/117/19/10165.short)
 
 ---
 
-## Social network analysis
-.pull-left[
-```{r, echo=FALSE, out.width=500}
-knitr::include_graphics("figures/Net.png")
-```
-]
-.pull-right[
+# Validating a UK emotion macroscope
+- 2 years of YouGov UK emotion survey and 1.5B UK Tweets
+- Gender-rescaled time series of emotional expression
+- Text analysis: dictionary-based (LIWC) and supervised (RoBERTa)
+- Pre-registered hypotheses with prediction period from Nov 2020
 
-]
----
-
-## Social network analysis
-.pull-left[
-```{r, echo=FALSE, out.width=500}
-knitr::include_graphics("figures/Net.png")
-```
-]
-.pull-right[
-```{r, echo=FALSE, out.width=950}
-knitr::include_graphics("figures/WCblue.png")
-```
-]
----
-
-## Social network analysis
-.pull-left[
-```{r, echo=FALSE, out.width=500}
-knitr::include_graphics("figures/Net.png")
-```
-]
-.pull-right[
-```{r, echo=FALSE, out.width=950}
-knitr::include_graphics("figures/WCred.png")
-```
-]
----
-
-## Social network analysis
-.pull-left[
-```{r, echo=FALSE, out.width=500}
-knitr::include_graphics("figures/Net.png")
-```
-]
-.pull-right[
-```{r, echo=FALSE, out.width=490}
-knitr::include_graphics("figures/WCgreen.png")
-```
-]
----
-
-## Social network analysis
-.pull-left[
-```{r, echo=FALSE, out.width=500}
-knitr::include_graphics("figures/Net.png")
-```
-]
-.pull-right[
-```{r, echo=FALSE, out.width=950}
-knitr::include_graphics("figures/WCyellow.png")
-```
-]
----
-
-## Retweet changes in yellow community
-.pull-left[
-```{r, echo=FALSE, out.width=500}
-knitr::include_graphics("figures/Net.png")
-```
-]
-.pull-right[
-```{r, echo=FALSE, out.width=450}
-knitr::include_graphics("figures/YellowRT.png")
-```
-]
----
-
-## EAT-Lancet and yes2meat: Summary
-
-- We mapped the digital backlash to EAT-Lancet on Twitter through #yes2meat
-
-- Birth of #yes2meat preceded the release of the report
-
-- Four communities: pro-EAT-Lancet, skeptic, pro-yes2meat, and vegan
-
-- Information flow from pro-yes2meat to skeptic community after report
-
-- Diet polarization: liberal vegan vs conservative keto
-
-
-**EATLancet vs yes2meat: the digital backlash to the planetary health diet.**  
-David Garcia, Victor Galaz, Stefan Daume. The Lancet 394(10215) (2019)
-https://doi.org/10.1016/S0140-6736(19)32526-7
-
----
-
-layout: true
-<div class="my-footer"><span> <a href=https://preprints.jmir.org/preprint/25169> 
-COVID-19 and the politicisation of medical preprints on Twitter: Quantitative Analysis of Social Media Data. Aleksandra Urman, Stefania Ionescu, David Garcia, Anikó Hannák (2020) </a></span></div>
-
----
-
-# Topics
-
-## 1. Food-based polarization: the EAT-Lancet case
-
-## 2. Politicization of medical preprints 
-
-*With Aleksandra Urman, Stefania Ionescu, and Anikó Hannák, University of Zurich*
-
----
-## The Santa Clara paper controversy
-![](figures/ioannidis.png)
-
----
-
-## A dataset of medical preprints on Twitter
-All tweets that had a link to a medRxiv paper between June 2019 and June 2020 
-.pull-left[
-- 557,405 tweets, 259,491 users
-- Classification of users based on their bio profile text: 
-  - 1,944 Democrats, 
-  - 9,174 Republicans
-  - 8,400 medics
-  - 15,400 scientists
-- We normalise metrics against a random sample of tweets from the same period.
-]
-.pull-right[
-```{r, echo=FALSE, out.width=800, fig.align='center'}
-knitr::include_graphics("figures/medRxiv1.jpeg")
-```
-]
-
----
-## A change in voice
-```{r, echo=FALSE, out.width=670, fig.align='center'}
-knitr::include_graphics("figures/politicansTS.jpeg")
-```
----
-## The Santa Clara paper case
 ```{r, echo=FALSE, out.width=1000, fig.align='center'}
-knitr::include_graphics("figures/Ioannidis1.jpeg")
+knitr::include_graphics("figures/Data.svg")
 ```
----
-## From "preprint" to "study"
-```{r, echo=FALSE, out.width=900, fig.align='center'}
-knitr::include_graphics("figures/words.png")
-```
----
-## Science communication in the digital society
-```{r, echo=FALSE, out.width=950, fig.align='center'}
-knitr::include_graphics("figures/xkcd.png")
-```
-
-COVID-19 and the politicisation of medical preprints on Twitter: Quantitative Analysis of Social Media Data. Aleksandra Urman, Stefania Ionescu, David Garcia, Anikó Hannák. [*Preprint (2020)*](https://preprints.jmir.org/preprint/25169)
 
 ---
 
+# Sadness in Twitter and YouGov
+
+```{r, echo=FALSE, out.width=1200, fig.align='center'}
+knitr::include_graphics("figures/Sadness.svg")
+```
+
+- Similar results with dictionary-based and supervised (r~0.65)
+---
+
+# Anxiety in Twitter and YouGov
+
+```{r, echo=FALSE, out.width=1200, fig.align='center'}
+knitr::include_graphics("figures/Anxiety.svg")
+```
+
+- Better results with dictionary-based method and with gender rescaling
+- Results robust to autocorrelation and heteroskedasticity
+
+---
+
+# Joy in Twitter and YouGov
+
+```{r, echo=FALSE, out.width=1200, fig.align='center'}
+knitr::include_graphics("figures/Joy.svg")
+```
+
+- Substantially better results with supervised method than dictionary-based
+---
+
+# Exploring 12 emotional states
+.pull-left[
+
+- Time series of number sentences like "I am [emotion]" on Twitter
+
+- Correlation coefficient with corresponding emotion in YouGov
+
+- Weak correlations happen for infrequent emotions in text
+
+- Similar results with and without gender rescaling
+]
+
+.pull-right[
+```{r, echo=FALSE, out.width=700}
+knitr::include_graphics("figures/Figure2.svg")
+```
+]
+
+---
 
 layout: true
 <div class="my-footer"><span>
-<a href=http://jasss.soc.surrey.ac.uk/23/3/5.html> A Weighted Balance Model of Opinion Hyperpolarization. Simon Schweighofer, Frank Schweitzer & David Garcia, JASSS (2020)</a></span></div>
-
----
-# Topics
-
-## 1. Food-based polarization: the EAT-Lancet case
-
-## 2. Politicization of medical preprints 
-
-## 3. A computational model of hyperpolarization
-
-*With Simon Schweighofer and Frank Schweitzer, ETH Zurich*
+Validating daily social media macroscopes of emotions. Max Pellert, Hannah Metzler, Michael Matzenberger, David Garcia. Working Paper (2021)</span></div>
 
 ---
 
-# Hyperpolarization
-
-```{r, echo=FALSE, out.width=950, fig.align='center'}
-knitr::include_graphics("figures/Hyperpolarization.png")
-```
-<center>
-*Hyperpolarization: Opinion extremeness x Opinion constraint*
-
----
-
-## Weighted Balance Theory and hyperpolarization
+# Validating an Austrian macroscope
 
 .pull-left[
-- Cognitive balance +   
- evaluative extremeness
 
-- ABM show emergence of hyperpolarization
+- 20-day emotion survey in derstandard.at (N=268,128)
+- Daily frequency, 3-day windows
 
-- Filter bubbles and echo chambers are not a necessary condition
+- Text from Der Standard forum (N=452,013)
 
-- **Predicts that issues become aligned and polarized over time**
+- Austrian tweets (N=515,187) filtered as UK macroscope
+
+- Compared dictionary-based (LIWC) and supervised model (GS)
+
 ]
-
 .pull-right[
-```{r, echo=FALSE, out.width=450}
-knitr::include_graphics("figures/WBT.png")
+```{r, echo=FALSE, out.width=800}
+knitr::include_graphics("figures/DS1.svg")
 ```
 ]
 
-[A Weighted Balance Model of Opinion Hyperpolarization. Schweighofer, Schweitzer & Garcia, JASSS (2020)](http://jasss.soc.surrey.ac.uk/23/3/5.html)
-
 ---
-class:center
 
-## Hyperpolarization in Weighted Balance Theory
+## Twitter sentiment and Der Standard survey
 
-
-<iframe width="800" height="500" src="https://www.youtube.com/embed/y4rvLMgqwXQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+```{r, echo=FALSE, out.width=1000, fig.align='center'}
+knitr::include_graphics("figures/DS2.svg")
+```
 
 ---
 
-# Topics
+# Correlations with new COVID-19 cases
 
-## 1. Food-based polarization: the EAT-Lancet case
-
-## 2. Politicization of medical preprints 
-
-## 3. A computational model of hyperpolarization
-
-## 4. Misinformation and ontologies of truth
-
-*With Stephan Lewandowsky, University of Bristol*
-
----
-
-## Deliberate lies vs shock and chaos
 .pull-left[
-Two approaches to mislead the public:
-- **deliberate lies** (e.g weapons of mass destruction in Iraq)
-- **shock and chaos** (e.g. Trump's approach, Russia and MH17)
+```{r, echo=FALSE, out.width=600}
+knitr::include_graphics("figures/DS31.svg")
+```
 ]
 .pull-right[
-```{r, echo=FALSE, out.width=250}
-knitr::include_graphics("figures/bush.jpg")
-```
-```{r, echo=FALSE, out.width=270}
-knitr::include_graphics("figures/Trump.jpeg")
+```{r, echo=FALSE, out.width=600}
+knitr::include_graphics("figures/DS32.svg")
 ```
 ]
-They differ in their **ontology of truth:**</br>
-- deliberate lies assume a strong realism with the acceptance that truths exist and a respect for facts</br>
-- shock and chaos assumes a strong constructivism where there is disbelief in the existence of external truths and a
-disrespect of facts.
----
 
-#### PRODEMINFO: Protecting the Democratic Information Space in Europe
-
-```{r, echo=FALSE, out.width=600, fig.align='center'}
-knitr::include_graphics("figures/PRODEMINFO.png")
-```
-
-- ERC Advanced project (PI: Stephan Lewandowsky, Bristol)
-- CSS lab involved in historical text analysis and field interventions
----
-
-## Summary
-
-- Misinformation beyond fake news: 
-  - participatory propaganda 
-  - new ontologies of truth: shock and chaos
-
-- The EAT-Lancet case: emerging polarization in food topics
-
-- The case of medical preprints on Twitter: increasing politicization
-
-- Weighted Balance computational model explains increasing politicization
-
-- PRODEMINFO: studying ontologies of truth to protect information spaces
+- Do correlations attenuate due to additional social media measurement error?
+- Survey emotion correlation with new cases as strong as Twitter sentiment
+- Errors sources might be different: Need for conceptual validations
 
 ---
 
-## TU Graz Master in Computational Social Systems
+# Summary
 
+- A call for methods research in Computational Social Science
+
+- Validating social media emotion macroscopes versus emotion surveys
+
+- UK validation vs YouGov representative survey. 
+Positive and sizeable correlations for sadness, anxiety, and joy in prediction exercise
+
+- Austria validation with daily survey Der Standard: both Twitter and der standard forum sentiment correlate
+
+- Supervised methods (RoBERTa-based) perform best but dictionary-based signals also carry information
+
+- Gender rescaling can improve estimates due to gender imbalance in data
+
+
+---
+
+# Thanks for listening!
+.pull-left[
 ```{r, echo=FALSE, out.width=750, fig.align='center'}
 knitr::include_graphics("figures/CD-MKT-StudMa-Kampagne-CSS-Flyer-A5-an02.png")
 ```
 
+Upcoming masters programme in **Computational Social Systems** at <br>
+TU Graz and Uni Graz
+]
+.pull-right[
+We are hiring!
+- [PhD at CSH Vienna on emotional misinformation](https://www.csh.ac.at/wp-content/uploads/2021/07/Emomis_PhD_CSH.pdf)
+- [Postdoc at University of Bristol on text as data about honesty](https://www.bristol.ac.uk/jobs/find/details/?nPostingId=100334&nPostingTargetId=240694&id=Q50FK026203F3VBQBV7V77V83&LG=UK&mask=newuobext)
+- Two upcoming postdoc positions at the Graz University of Technology
 
-**Thanks for listening! More at: [tugraz.at/go/master-css](tugraz.at/go/master-css) and [www.dgarcia.eu](https://dgarcia.eu)**
+**More at: [www.dgarcia.eu](https://dgarcia.eu) and [@dgarcia_eu](https://twitter.com/dgarcia_eu)**
+
+Slides:  [dgarcia.eu/IC2S2_2021](www.dgarcia.eu/IC2S2_2021)
+]
+
 
 
 
