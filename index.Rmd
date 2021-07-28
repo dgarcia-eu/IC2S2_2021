@@ -1,7 +1,7 @@
 ---
 title: "Measuring large-scale emotion aggregates through social media text"
 author: "David Garcia <br> *Graz University of Technology, CSH Vienna, Med Uni Vienna*"
-date: "29.07.2021, IC$^2$S$^2$ <br> Slides vailable at: dgarcia.eu/IC2S2_2021"
+date: "29.07.2021, IC$^2$S$^2$ <br> Slides vailable at: dgarcia.eu/IC2S2-2021"
 output:
   xaringan::moon_reader:
     lib_dir: libs 
@@ -66,6 +66,12 @@ knitr::include_graphics("figures/Hype3.svg")
 ```
 ---
 
+```{r, echo=FALSE, out.width=950, fig.align='center'}
+knitr::include_graphics("figures/earth.svg")
+```
+
+---
+
 layout: true
 <div class="my-footer"><span>
 <a href=https://xxx> Social media emotion macroscopes reflect emotional experiences in society at large. David Garcia, Max Pellert, Jana Lasser, Hannah Metzler. Arxiv preprint (2021)</a></span></div>
@@ -73,6 +79,7 @@ layout: true
 ---
 
 # Social Media Macroscopes of Emotions
+
 .pull-left[
 ```{r, echo=FALSE, out.width=1100}
 knitr::include_graphics("figures/Macy.jpg")
@@ -126,12 +133,13 @@ knitr::include_graphics("figures/Jaidka.png")
 ---
 
 # Validating a UK emotion macroscope
-- 2 years of YouGov UK emotion survey and 1.5B UK Tweets
-- Gender-rescaled time series of emotional expression
-- Text analysis: dictionary-based (LIWC) and supervised (RoBERTa)
-- Pre-registered hypotheses with prediction period from Nov 2020
+1. Two years of weekly representative UK emotion survey by YouGov
+2. UK Twitter data for the same period: 1.5 Billion tweets (without RT)
+3. Text analysis: dictionary-based (LIWC) and supervised (RoBERTa)
+4. Gender-rescaled time series of emotional expression
+5. Pre-registered hypotheses with prediction period from Nov 2020
 
-```{r, echo=FALSE, out.width=1000, fig.align='center'}
+```{r, echo=FALSE, out.width=900, fig.align='center'}
 knitr::include_graphics("figures/Data.svg")
 ```
 
@@ -175,7 +183,8 @@ knitr::include_graphics("figures/Joy.svg")
 
 - Weak correlations happen for infrequent emotions in text
 
-- Similar results with and without gender rescaling
+- Comparison: US weekly pre-election polls correlate with 0.66
+
 ]
 
 .pull-right[
@@ -192,7 +201,7 @@ Validating daily social media macroscopes of emotions. Max Pellert, Hannah Metzl
 
 ---
 
-# Validating an Austrian macroscope
+## Study 2: Validating an Austrian macroscope
 
 .pull-left[
 
@@ -241,46 +250,64 @@ knitr::include_graphics("figures/DS32.svg")
 
 ---
 
-# Summary
-
-- A call for methods research in Computational Social Science
-
-- Validating social media emotion macroscopes versus emotion surveys
-
-- UK validation vs YouGov representative survey. 
-Positive and sizeable correlations for sadness, anxiety, and joy in prediction exercise
-
-- Austria validation with daily survey Der Standard: both Twitter and der standard forum sentiment correlate
-
-- Supervised methods (RoBERTa-based) perform best but dictionary-based signals also carry information
-
-- Gender rescaling can improve estimates due to gender imbalance in data
-
+layout: true
+<div class="my-footer"><span>
+<a href=https://xxx> Social media emotion macroscopes reflect emotional experiences in society at large. David Garcia, Max Pellert, Jana Lasser, Hannah Metzler. Arxiv preprint (2021)</a></span></div>
 
 ---
+
+# Social Sensing Emotions
+
+```{r, echo=FALSE, out.width=725, fig.align='center'}
+knitr::include_graphics("figures/socialsensing.svg")
+```
+
+3rd person and tweet emotion: +74.85% in anx. +62.12% in sad +34.97% in pos.
+
+---
+
+```{r, echo=FALSE, out.width=1050, fig.align='center'}
+knitr::include_graphics("figures/summary1.svg")
+```
+
+---
+
+```{r, echo=FALSE, out.width=1050, fig.align='center'}
+knitr::include_graphics("figures/summary2.svg")
+```
+
+---
+
+```{r, echo=FALSE, out.width=1050, fig.align='center'}
+knitr::include_graphics("figures/summary3.svg")
+```
+
+---
+
 
 # Thanks for listening!
 .pull-left[
 ```{r, echo=FALSE, out.width=750, fig.align='center'}
-knitr::include_graphics("figures/CD-MKT-StudMa-Kampagne-CSS-Flyer-A5-an02.png")
+knitr::include_graphics("figures/Logo_CSS.png")
 ```
 
-Upcoming masters programme in **Computational Social Systems** at <br>
-TU Graz and Uni Graz
+New English-speaking **masters programme** at Uni Graz and TU Graz
 ]
 .pull-right[
-We are hiring!
+<center>
+🚨🚨**We are hiring!**🚨🚨
+</center>
 - [PhD at CSH Vienna on emotional misinformation](https://www.csh.ac.at/wp-content/uploads/2021/07/Emomis_PhD_CSH.pdf)
+
 - [Postdoc at University of Bristol on text as data about honesty](https://www.bristol.ac.uk/jobs/find/details/?nPostingId=100334&nPostingTargetId=240694&id=Q50FK026203F3VBQBV7V77V83&LG=UK&mask=newuobext)
-- Two upcoming postdoc positions at the Graz University of Technology
+
+- Two upcoming postdoc positions at the CSS Lab at TU Graz
+
+]
+
+<center>
 
 **More at: [www.dgarcia.eu](https://dgarcia.eu) and [@dgarcia_eu](https://twitter.com/dgarcia_eu)**
 
-Slides:  [dgarcia.eu/IC2S2_2021](www.dgarcia.eu/IC2S2_2021)
-]
-
-
-
-
-
+Slides:  [www.dgarcia.eu/IC2S2-2021](http://www.dgarcia.eu/IC2S2-2021)
 
