@@ -1,6 +1,6 @@
 ---
 title: "Measuring large-scale emotion aggregates through social media text"
-author: "David Garcia <br> *Graz University of Technology, CSH Vienna, Med Uni Vienna*"
+author: "David Garcia <br> *Graz University of Technology and CSH Vienna*"
 date: "29.07.2021, IC$^2$S$^2$ <br> Slides vailable at: dgarcia.eu/IC2S2-2021"
 output:
   xaringan::moon_reader:
@@ -13,7 +13,6 @@ output:
       countIncrementalSlides: false
       ratio: "16:9"
 ---
-
 
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
 #This block contains the theme configuration for the CSS lab slides style
@@ -40,7 +39,7 @@ layout: true
 
 ## The Computational Social Science Lab Austria
 <center>
-```{r, echo=FALSE, out.width=900}
+```{r, echo=FALSE, out.width=925}
 knitr::include_graphics("figures/Lab-July2021.png")
 ```
 
@@ -74,7 +73,7 @@ knitr::include_graphics("figures/earth.svg")
 
 layout: true
 <div class="my-footer"><span>
-<a href=https://xxx> Social media emotion macroscopes reflect emotional experiences in society at large. David Garcia, Max Pellert, Jana Lasser, Hannah Metzler. Arxiv preprint (2021)</a></span></div>
+<a href=https://xxx> Social media emotion macroscopes reflect emotional experiences in society at large. David Garcia, Max Pellert, Jana Lasser, Hannah Metzler. https://arxiv.org/abs/2107.13236 (2021)</a></span></div>
 
 ---
 
@@ -179,11 +178,11 @@ knitr::include_graphics("figures/Joy.svg")
 
 - Time series of number sentences like "I am [emotion]" on Twitter
 
-- Correlation coefficient with corresponding emotion in YouGov
-
 - Weak correlations happen for infrequent emotions in text
 
 - Comparison: US weekly pre-election polls correlate with 0.66
+
+- Arxiv preprint at https://arxiv.org/abs/2107.13236
 
 ]
 
@@ -252,7 +251,7 @@ knitr::include_graphics("figures/DS32.svg")
 
 layout: true
 <div class="my-footer"><span>
-<a href=https://xxx> Social media emotion macroscopes reflect emotional experiences in society at large. David Garcia, Max Pellert, Jana Lasser, Hannah Metzler. Arxiv preprint (2021)</a></span></div>
+<a href=https://xxx> Social media emotion macroscopes reflect emotional experiences in society at large. David Garcia, Max Pellert, Jana Lasser, Hannah Metzler. https://arxiv.org/abs/2107.13236 (2021)</a></span></div>
 
 ---
 
